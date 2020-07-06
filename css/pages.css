@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.bread {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+.bread ol {
+  margin: 0;
+}
+.bread ol li a {
+  text-decoration: none;
+}
+
+.front {
+  padding: 30px 0;
+}
+.front h1 {
+  font-weight: 1000;
+  margin-bottom: 25px;
+}
+.front hr {
+  width: 60%;
+  margin: 0 auto 20px;
+}
+.front .row {
+  margin-top: 25px;
+}
+@media (max-width: 767px) {
+  .front .row > div {
+    margin-bottom: 20px;
+  }
+}
+.front h3 {
+  margin-top: 10px;
+}
+
+.man {
+  background-color: #eee;
+  padding: 30px 0;
+}
+.man h2 {
+  font-weight: 600;
+}
+.man p {
+  line-height: 1.5;
+}
+.man button, .man button:hover {
+  padding: 6px 11px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.asked {
+  padding: 30px 0;
+}
+.asked h1 {
+  font-weight: 1000;
+  margin-bottom: 25px;
+}
+.asked hr {
+  width: 60%;
+  margin: 0 auto 20px;
+}
+.asked .rob {
+  margin-top: 30px;
+}
+.asked .rob .panel .panel-heading h4 a:after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f0d7';
+  font-weight: 900;
+  transition: 1s ease;
+  float: right;
+}
+.asked .rob .panel .panel-heading h4 a.collapsed:after {
+  content: "";
+}
+
+/*# sourceMappingURL=pages.css.map */

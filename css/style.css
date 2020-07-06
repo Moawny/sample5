@@ -1,0 +1,454 @@
+* {
+  user-select:none;
+  font-family: 'Arial', 'Tahoma';
+}
+body {
+  padding-top:50px;
+}
+
+p.lead {
+  font-size:16px;
+}
+h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
+
+/******* Start Overriding Bootstrap ******/
+
+/* Main Navbar */
+
+/* Navbar Link */
+
+.navbar-inverse .navbar-nav > li > a {
+  color:#BBB;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:16px;
+  text-transform:capitalize;
+}
+.navbar-inverse .navbar-nav > li.active > a {
+  background-color:#009688;
+}
+
+.navbar-right {margin:0 !important;}
+
+.navbar-right a:hover {color:#bbb;background-color:rgba(0, 0, 0, 0)}
+
+/* Brand Name */
+
+.navbar-inverse .navbar-brand {
+  color:#BBB;
+  font-size: 20px;
+  margin-left:0 !important;
+}
+
+.navbar-inverse .navbar-brand span{
+  color:#009688;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown-menu {background-color:#333;min-width:200px}
+
+.navbar-right .dropdown-menu {left:0;right:auto}
+
+.dropdown-menu > li > a {color:#bbb;padding:6px 20px}
+
+.dropdown-menu > li > a:hover,
+
+.dropdown-menu > li > a:focus {color:#FFF;padding-left:25px}
+
+.dropdown-menu > li:hover > a {background-color:#009688}
+
+/* Navbar Toggle */
+
+.navbar-toggle {margin-top:18px}
+
+/* Carousel */
+
+.sliding {
+  height:60vh;
+}
+
+.sliding .carousel-inner {
+  height:100%;
+}
+
+.sliding .carousel-inner .item {
+  height:100%;
+}
+
+.sliding .carousel-inner .item img {
+  height:100%;
+  width:100%;
+}
+.carousel-indicators {bottom:0}
+
+.carousel-indicators li {
+  height:15px;
+  width:15px;
+  border:1px solid #EEE
+}
+
+.carousel-indicators .active {height:17px;width:17px; background-color:#bbb}
+
+.carousel-inner > .item > img {width:100%}
+
+/******* End Overriding Bootstrap ******/
+
+/* Start Section Tool Box */
+
+.options {position:fixed;top:100px;left:-200px;z-index:9999;transition:1s ease;}
+
+.options .color-option {
+  float:left;
+  background:#333;
+  color:#fff;
+  padding:10px;
+  width:200px;
+}
+.options h4 {
+  margin-bottom:20px;
+}
+
+.options .color-option ul li {
+  width:15px;
+  height:15px;
+  display:inline-block;
+  margin-right:7px;
+  cursor:pointer
+}
+
+.options span {padding:0 5px;color:#FFF;background-color:#009688;width:30px;height:30px;line-height:30px;float:right;cursor:pointer}
+
+/* End Section Tool Box */
+
+/* Start Section About */
+
+.about {
+  padding-top:30px;
+  padding-bottom:30px}
+  
+.about .lead {color:#888;font-size:21px;margin-top:15px}
+
+.about span {
+  color:#009688;
+}
+
+/* End Section About */
+
+/* Start Section Features */
+
+.features {background:#EEE;
+  padding-top:30px;
+  padding-bottom:30px}
+
+.features .feat {margin-bottom:30px}
+
+.features .feat p {line-height:2em}
+
+.features .feat span.glyphicon {font-size:25px;margin-bottom:10px;color:#666}
+
+/* End Section Features */
+
+/* Start Testimonials Section */
+
+.testmonials {
+  padding-top:30px;
+  padding-bottom:30px
+}
+.testmonials h2 {margin-bottom:30px}
+
+.testmonials .lead {line-height:2em;margin-bottom:10px}
+
+.testmonials .carousel-inner {min-height:160px}
+
+.testmonials span {font-size:18px;font-weight:bold;color:#009688}
+
+.testmonials .slider {
+  height:50%;
+}
+.testmonials .carousel-indicators {
+  position:static;
+  width:100%;
+  margin-left:auto;
+  padding-top:20px
+}
+
+.testmonials .carousel-indicators li {
+  border: 1px solid #bbb;
+  border-radius:50%;
+  overflow:hidden;
+  margin:5px;
+}
+
+.testmonials .carousel-indicators li.active {
+  background-color:#bbb;
+}
+
+
+/* End Testimonials Section */
+
+/* Start Section Price Table */
+
+.prices {background:#EEE;padding:30px 0}
+
+.prices .price_box {
+  background:#FFF;
+  padding:10px;
+  border:1px solid #DDD;
+  margin-bottom:15px
+}
+
+.prices .price_box h2 {margin:5px 0 15px}
+
+.prices .price_box:hover p {
+  -webkit-transform:scale(1.1,1.1) rotateY(360deg);
+  -moz-transform:scale(1.1,1.1) rotateY(360deg);
+  -o-transform:scale(1.1,1.1) rotateY(360deg);
+  transform:scale(1.1,1.1) rotateY(360deg);
+  border:2px solid #DFDFDF;
+}
+
+.prices .price_box p {
+  font-size:30px;
+  font-weight:bold;
+  color:#666;
+  width:70px;
+  height:70px;
+  background:#F3F3F3;
+  border-radius:50%;
+  line-height:70px;
+  border:2px solid #FFF;
+  margin:20px auto;
+}
+
+.prices .price_box ul {line-height:250%;font-size:18px}
+
+.prices .price_box a {margin-bottom:5px}
+
+/* End Section Price Table */
+
+/* Start Section Our Team */
+
+.team {
+  padding:30px 0;
+  background:url('../img/back.gif') no-repeat center center fixed;
+}
+
+.team .person {background:rgba(187, 187, 187, 0.815);color:#333;padding:20px;}
+
+.team h2 {margin-bottom:40px;color:#fff}
+
+.team .row {
+  margin:0;
+}
+
+.team .person img {
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+
+.team .person i {
+  margin:0 2px;
+}
+
+/* End Section Our Team */
+
+/* Start Section Subscribe */
+
+.sub {background:#EEE; padding:30px 0}
+
+.sub h2 {color:#888;letter-spacing:2px;margin-bottom:20px}
+
+.sub p {margin-bottom:30px}
+
+.sub .form-control {border-radius:0;margin-right:-5px;width:300px}
+
+.sub button {border-radius:0}
+
+/* End Section Subscribe */
+
+/* Start Section Stats */
+
+.stats {
+  background:url('../img/bab.jpg') no-repeat center center fixed;
+}
+
+.stats .nums {background-color:rgba(2,2,2,0.8);color:#B6B5B5;padding:30px 0;}
+
+.stats .nums h2 {margin-bottom:30px;margin-top:0}
+.stats .stat {margin-bottom:30px}
+
+.stats .stat:hover {color:#FFF}
+
+.stats p {font-size:30px;font-weight:800;margin-bottom:0}
+
+.stats span {font-size:18px}
+
+/* End Section Stats */
+
+/* Start Section Our Skills */
+
+.skills {padding:30px 0;}
+
+.skills h3 {font-weight:bold;margin-top:0}
+
+.skills .progress {height:26px}
+
+.skills .progress-bar {
+  line-height:26px;
+  font-size:15px;
+  text-align:left;
+  text-indent:10px
+}
+
+/* End Section Our Skills */
+
+/* Start Section Contact Us */
+
+.contact {
+  background:url('../img/contact-us.jpg') no-repeat center center fixed;
+}
+
+.contact .cont {background:rgba(9,9,9,0.8);color:#DDD;padding:30px 0;}
+
+.contact p {margin-bottom:40px}
+
+.contact textarea {height: 5.5em;;width:100%;resize:none}
+
+.contact input, .contact textarea {background:rgba(82,78,78,0.5);color:#FFF;border:none;outline:none}
+
+/* End Section Contact Us */
+
+/* Start Section Our Clients */
+
+.cleints {
+  background:#EEE;
+  padding-top:30px;
+  padding-bottom:30px
+}
+
+.cleints img {
+  opacity:0.4;
+  filter: alpha(opacity=40);
+}
+
+.cleints img:hover {opacity:1}
+
+
+/* Start Section Our Clients */
+
+/* Start Ultimate Footer Section */
+
+.footer {background:#111;color:#AAA;padding-top:10px}
+
+.footer h3 {color:#009688;letter-spacing:1px;margin:30px 0 20px}
+
+.footer a {color:#AAA}
+
+.footer a:hover {color:#FFF}
+
+.footer .three-columns {overflow:hidden}
+
+.footer .three-columns li {width:33.3333%;float:left;padding:5px 0;cursor:pointer;margin-bottom:20px;}
+
+.footer .images {overflow:hidden;margin:20px 0 10px}
+
+.footer .images li {
+  float:left;
+  margin-right:3px;
+  opacity:0.7;
+  opacity:.7;
+  cursor:pointer;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  margin:0 5px;
+}
+
+.footer .images li img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+}
+
+.footer .images li:hover {opacity:1}
+
+.footer .img-thumbnail {
+  background:rgba(0,0,0,0.2);
+  border:1px solid #444;
+  margin-bottom:5px
+}
+
+.footer .copyright {
+  background:#333;
+  color:#AAA;
+  padding:15px 0;
+  margin-top:30px;
+  font-size:18px
+}
+
+.copyright {
+  text-transform:capitalize;
+}
+.copyright span {
+  color:#009688;
+  text-transform:uppercase;
+}
+/* End Ultimate Footer Section */
+
+
+/* Start Scrollup */
+
+.toTop {
+  width:40px;
+  height:40px;
+  color:#fff;
+  background-color:#009688;
+  text-align:center;
+  position:fixed;
+  right:25px;
+  bottom:20px;
+  z-index:9999;
+  line-height:50px;
+  display:none;
+  cursor:pointer;
+  padding:0px 5px;
+  border-radius:50%;
+  outline:none;
+  border:none;
+}
+
+
+/* End Scrollup */
+
+/* Start Our Grouping */
+
+.team,
+.stats,
+.contact {
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+.team .h1,
+.stats .h1,
+.features .h1,
+.our-skills .h1,
+.prices .h1 {margin-bottom:50px}
+
+.social-list li,
+.our-clients img,
+.stats .stats,
+.prices .price_box p,
+.testimonials .carousel-indicators li {
+  -webkit-transition:all .7s ease-in-out;
+  -moz-transition:all .7s ease-in-out;
+  -o-transition:all .7s ease-in-out;
+  transition:all .7s ease-in-out;
+}
+
+/* End Our Grouping */
