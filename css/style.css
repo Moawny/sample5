@@ -314,7 +314,7 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 
 .contact p {margin-bottom:40px}
 
-.contact textarea {height: 5.5em;;width:100%;resize:none;padding: 6px 12px;}
+.contact textarea {height: 5.5em;;width:100%;resize:none;padding: 6px 12px;border-radius:4px;}
 
 .contact input:focus, .contact input, .contact textarea {background:rgba(82,78,78,0.5);color:#ddd;border:none;outline:none;box-shadow:none;}
 
