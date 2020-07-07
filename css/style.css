@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 
 /* Navbar Link */
 
+.navbar {margin:0;}
+
+
 .navbar-inverse .navbar-nav > li > a {
   color:#BBB;
   padding-top:15px;
@@ -28,16 +31,16 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
   background-color:#009688;
 }
 
-.navbar-right {margin:0 !important;}
+.navbar-right {margin-right:0 !important;}
 
 .navbar-right a:hover {color:#bbb;background-color:rgba(0, 0, 0, 0)}
 
 /* Brand Name */
 
-.navbar-inverse .navbar-brand {
-  color:#BBB;
+.navbar-inverse .navbar-brand, .navbar-brand:hover {
+  color:#bbb !important;
   font-size: 20px;
-  margin-left:0 !important;
+  margin-left:0;
 }
 
 .navbar-inverse .navbar-brand span{
@@ -51,17 +54,13 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 
 .navbar-right .dropdown-menu {left:0;right:auto}
 
-.dropdown-menu > li > a {color:#bbb;padding:6px 20px}
+.dropdown-menu > li > a {color:#bbb;padding:6px 20px;transition:1s ease}
 
-.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu>li>a:hover, 
 
-.dropdown-menu > li > a:focus {color:#FFF;padding-left:25px}
-
-.dropdown-menu > li:hover > a {background-color:#009688}
-
+.dropdown-menu > li > a:focus {color:#FFF;padding-left:25px;}
 /* Navbar Toggle */
 
-.navbar-toggle {margin-top:18px}
 
 /* Carousel */
 
@@ -235,7 +234,7 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
   background:url('../img/back.gif') no-repeat center center fixed;
 }
 
-.team .person {background:rgba(187, 187, 187, 0.815);color:#333;padding:20px;}
+.team .person {background:rgba(187, 187, 187, 0.815);color:#333;padding:20px;margin-bottom: 20px;}
 
 .team h2 {margin-bottom:40px;color:#fff}
 
@@ -326,12 +325,14 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 .cleints {
   background:#EEE;
   padding-top:30px;
-  padding-bottom:30px
+  padding-bottom:0
 }
 
 .cleints img {
   opacity:0.4;
   filter: alpha(opacity=40);
+  margin-bottom: 40px;
+  cursor:pointer;
 }
 
 .cleints img:hover {opacity:1}
@@ -452,3 +453,23 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 }
 
 /* End Our Grouping */
+
+@media (max-width:767px) {
+  .sliding {display:none}
+
+  .sub .form-control {width: 70%;margin:0 auto}
+
+  .sub button {margin-top:20px;}
+
+  .navbar-fixed-top .navbar-collapse {max-height:10000px !important;padding:0 10px !important}
+
+  .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu>li>a:hover, 
+
+  .dropdown-menu > li > a:focus {color:#FFF !important;padding-left:30px}
+
+  .footer .copyright {font-size:14px}
+
+  .about .lead {font-size:16px}
+
+  .about h1 {font-size:25px}
+}
